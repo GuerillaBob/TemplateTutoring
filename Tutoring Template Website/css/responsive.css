@@ -136,6 +136,9 @@
     #home-text p {
         font-size: 13px;
     }
+    #container1 {
+        padding: 80px 0;
+    }
     /* Generic */
     .btn-general {
         padding: 8px 35px 8px 35px;
@@ -181,10 +184,6 @@
     /* Stats */
     .stats-item p {
         line-height: 18px;
-    }
-    /* Blog */
-    .blog-post .post-meta p {
-        line-height: 14px;
     }
     /* Contact */
     ul.office-details li {
@@ -267,14 +266,7 @@
     .about-item h3 {
         font-size: 18px;
     }
-    /* Team */
-    #team-left .vertical-heading {
-        min-height: 130px;
-    }
-    .skill h4 {
-        font-size: 14px;
-        line-height: 35px;
-    }
+    
     /* Tech Statement */
     #tech-statement h3 {
         font-size: 20px;
@@ -331,13 +323,7 @@
     #services-tabs h3 {
         font-size: 28px;
     }
-    /* Portfolio */
-    #portfolio {
-        padding-bottom: 0;
-    }
-    #isotope-filters button {
-        padding-right: 15px;
-    }
+    
     /* Testimonials */
     #testimonials {
         padding-top: 45px;
@@ -379,35 +365,7 @@
     .stats-item h3 {
         font-size: 24px;
     }
-    /* Blog */
-    #blog-left {
-        text-align: center;
-        margin-bottom: 30px;
-    }
-    .blog-post {
-        margin-bottom: 25px;
-    }
-    /* Contact */
-    #contact-left {
-        text-align: center;
-    }
-    .office {
-        margin-bottom: 40px;
-    }
-    ul.office-details li {
-        display: block;
-        margin-top: 25px;
-    }
-    ul.office-details li i {
-        width: auto;
-        display: block;
-        margin-bottom: 3px;
-    }
-    ul.social-list {
-        margin-bottom: 40px;
-    }
-}
-
+    
 
 /* Extra Small Devices (Portrait Phones & Smaller Devices) */
 
@@ -425,14 +383,7 @@
     .vertical-heading h2 {
         font-size: 22px;
     }
-    /* Portfolio */
-    #isotope-filters {
-        text-align: center;
-    }
-    #isotope-filters button {
-        font-size: 10px;
-        padding-right: 14px;
-    }
+    
     /* Testimonials */
     .testimonial h3 {
         font-size: 14px;

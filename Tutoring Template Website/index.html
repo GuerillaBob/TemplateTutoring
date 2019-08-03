@@ -130,10 +130,18 @@
                     <i class="fa fa-search"></i>
                 </button>
             </div>
+                
+            <div id="myDIV">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+            </div>
 
             </div>
 
-        </div>
+            </div>
         
 
     </section>
@@ -470,110 +478,6 @@
     </section>
     <!-- Testimonials Ends -->
 
-    <!-- Pricing -->
-    <section id="pricing">
-
-        <div class="content-box-md">
-
-            <div class="container">
-
-                <div class="row">
-
-                    <div class="col-md-12 text-center wow slideInDown">
-                        <div class="horizontal-heading">
-                            <h5>Lovely Customers</h5>
-                            <h2>Our Pricing</h2>
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="row">
-
-                    <div class="col-md-4 col-sm-4 wow fadeInLeft">
-
-                        <!-- Pricing Table 01 -->
-                        <div class="pricing-table">
-                            <div class="type">
-                                <h4>Basic</h4>
-                            </div>
-
-                            <div class="price">
-
-                                <div class="row">
-
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
-                                        <h2><span class="dollar">&#36;</span>29<br><span class="month">Month</span></h2>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 col-xs-8">
-                                        <p>You will get all these awesome services with this great price. Get it now!</p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <ul class="package">
-                                <li><i class="fa fa-check"></i>Full access</li>
-                                <li><i class="fa fa-check"></i>Unlimited Bandwidth</li>
-                                <li><i class="fa fa-check"></i>Powerful Admin Panel</li>
-                                <li><i class="fa fa-check"></i>Email Accounts</li>
-                                <li><i class="fa fa-check"></i>10 Free Web sites</li>
-                            </ul>
-
-                            <div id="pricing-btn-01">
-                                <a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">Get Started</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-                    <div class="col-md-4 col-sm-4 wow fadeInUp" data-wow-duration="3s">
-
-                        <!-- Pricing Table 03 -->
-                        <div class="pricing-table">
-                            <div class="type">
-                                <h4>Professional</h4>
-                            </div>
-
-                            <div class="price">
-
-                                <div class="row">
-
-                                    <div class="col-md-4 col-sm-4 col-xs-4">
-                                        <h2><span class="dollar">&#36;</span>96<br><span class="month">Month</span></h2>
-                                    </div>
-                                    <div class="col-md-8 col-sm-8 col-xs-8">
-                                        <p>You will get all these awesome services with this great price. Get it now!</p>
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <ul class="package">
-                                <li><i class="fa fa-check"></i>Full access</li>
-                                <li><i class="fa fa-check"></i>Unlimited Bandwidth</li>
-                                <li><i class="fa fa-check"></i>Powerful Admin Panel</li>
-                                <li><i class="fa fa-check"></i>Email Accounts</li>
-                                <li><i class="fa fa-check"></i>10 Free Web sites</li>
-                            </ul>
-
-                            <div id="pricing-btn-03">
-                                <a class="btn btn-general btn-yellow" href="#" title="Get Started" role="button">Get Started</a>
-                            </div>
-
-                        </div>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-    <!-- Pricing Ends -->
-
     <!-- Stats -->
     <section id="stats">
 
@@ -701,6 +605,23 @@
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+    
+    <!-- Selected/Unselected Tags JS -->
+    <script>
+// Add active class to the current button (highlight it)
+var header = document.getElementById("myDIV");
+var btns = header.getElementsByClassName("btn");
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+  var current = document.getElementsByClassName("active");
+  if (current.length > 0) { 
+    current[0].className = current[0].className.replace(" active", "");
+  }
+  this.className += " active";
+  });
+}
+</script>
+    
     
 </body>
 

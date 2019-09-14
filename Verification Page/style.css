@@ -52,8 +52,9 @@ button {
     background-color: #B85FC6;
     border-radius: 30px;
     text-transform: uppercase;
+    color: white;
 }
-    
+  
 div {
   position: relative;
   z-index: 1;
